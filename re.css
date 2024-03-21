@@ -21,6 +21,13 @@ body {
     height: 100px;
 }
 
+/* .date{
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+} */
+
 .container {
     width: 600px;
     padding: 20px;

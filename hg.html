@@ -2,13 +2,20 @@
 <html lang="lv">
 <head>
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studiju reģistrācijas forma</title>
    <!-- ссылка на css -->
     <link rel="stylesheet" href="re.css">
 </head>
 <body>
-    
+    <!-- календарик лол -->
+    <!-- <div class="date">
+    <input type="date" value="<?php echo date('Y-m-d'); ?>">
+    </div> -->
+
+
+    <!-- поля заполнения -->
     <div class="container">
         <h1>Studiju reģistrācijas forma</h1>
         <form action="submit.php" method="POST">
@@ -20,7 +27,8 @@
 
             <label for="personas_kods">Personas kods:</label>
             <input type="text" id="personas_kods" name="personas_kods" required>
-                <!-- выбор программ -->
+
+                <!-- выбор учебных программ -->
             <label for="studiju_programma">Studiju programma:</label>
             <select id="studiju_programma" name="studiju_programma" required>
                 <option value="" selected disabled>Izvēlieties studiju programmu</option>
