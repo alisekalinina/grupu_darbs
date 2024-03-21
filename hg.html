@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studiju reģistrācijas forma</title>
+   <!-- ссылка на css -->
+    <link rel="stylesheet" href="re.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Studiju reģistrācijas forma</h1>
+        <form action="submit.php" method="POST">
+            <label for="vards">Vārds:</label>
+            <input type="text" id="vards" name="vards" required>
+
+            <label for="uzvards">Uzvārds:</label>
+            <input type="text" id="uzvards" name="uzvards" required>
+
+            <label for="personas_kods">Personas kods:</label>
+            <input type="text" id="personas_kods" name="personas_kods" required>
+                <!-- выбор программ -->
+            <label for="studiju_programma">Studiju programma:</label>
+            <select id="studiju_programma" name="studiju_programma" required>
+                <option value="" selected disabled>Izvēlieties studiju programmu</option>
+                <option value="Informatika">Informatika</option>
+                <option value="Biznesa administrācija">Biznesa administrācija</option>
+                <option value="Loģistika">Loģistika</option>
+                <option value="Autotransporta inženierija">Autotransporta inženierija</option>
+                <option value="Aviācijas transports">Aviācijas transports</option>
+                <option value="Ģeomātika">Ģeomātika</option>
+                <option value="Medicīnas inženierija un fizika">Medicīnas inženierija un fizika</option>
+                <option value="Siltumenerģētika un siltumtehnika">Siltumenerģētika un siltumtehnika</option>
+                
+            </select>
+
+            <label for="ce1_prieksmets">CE līmenis 1: Priekšmets</label>
+            <input type="text" id="ce1_prieksmets" name="ce1_prieksmets" required>
+
+            <label for="ce1_limenis">CE līmenis 1: Līmenis</label>
+            <input type="text" id="ce1_limenis" name="ce1_limenis" required>
+
+            <label for="ce2_prieksmets">CE līmenis 2: Priekšmets</label>
+            <input type="text" id="ce2_prieksmets" name="ce2_prieksmets" required>
+
+            <label for="ce2_limenis">CE līmenis 2: Līmenis</label>
+            <input type="text" id="ce2_limenis" name="ce2_limenis" required>
+
+            <label for="videja_atzime">Vidējā atzīme vidusskolā:</label>
+            <input type="number" min="1" max="10" name="vidAtzime" required>
+            <button type="submit">Reģistrēties</button>
+        </form>
+    </div>
+</body>
+</html>
